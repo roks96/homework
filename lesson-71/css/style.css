@@ -50,8 +50,9 @@ body {
     width: 100px;
     height: 100px;
     background: #ff0000;
-    top: 100px;
-    left: 12%;
+    transform: translate(100px,100px);
+    /* top: 100px; */
+    /* left: 12%; */
     border-radius: 50px;
     border: 6px solid, #ffffff;
     content: '';
@@ -64,17 +65,18 @@ body {
 
     
     .title::after {
-        position: absolute;
+        position: relative;
     }
     
     .title::after {
         display: block;
-        position: absolute;
+        position: relative;
         width: 100px;
         height: 100px;
         background: #0078f7;
-        top: 150px;
-        left: 1182px;
+        transform: translate(797px,-100px);
+        /* top: 150px; */
+        /* left: 1182px; */
         border-radius: 50px;
         border: 6px solid, #ffffff;
         content: '';
