@@ -1,0 +1,25 @@
+:root {
+	/* font-family */
+	--font-family: 'Satoshi', sans-serif;
+	--second-family: 'Integral', sans-serif;
+
+	/* colors */
+	--main-color: #000;
+	--accent-color: #00000099;
+	--bg-color: #fff;
+	--bg-grey: #F2F0F1;
+	--secondary-color: #f0f0f0;
+
+	/* container */
+	--container-width: 1240px;
+	--container-pudding: 16px;
+
+	/* layers */
+	--layer-negative: -1;
+	--layer-0: 0;
+	--layer-1: 1;
+	--layer-2: 2;
+	--layer-3: 3;
+
+	--transition-duration: 0.3s;
+}
