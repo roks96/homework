@@ -14,6 +14,7 @@
 }
 
 .hero__title {
+	max-width: 577px;
 	font-family: var(--second-family);
 	font-weight: 900;
 	font-size: 57px;
@@ -21,10 +22,8 @@
 	/* margin-top: 82px; */
 	margin-top: 106px;
 	max-height: 168px;
-}
-
-.hero__title-container{
-	max-width: 577px;
+	white-space: nowrap;
+	/* letter-spacing: -0.09em; */
 }
 
 .hero__subtitle {
@@ -121,7 +120,7 @@
 .hero__star--large {
 	position: absolute;
 	top: -3%;
-    left: 93%;
+	left: 93%;
 }
 
 .hero__image {

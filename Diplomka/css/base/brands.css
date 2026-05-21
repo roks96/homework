@@ -1,3 +1,7 @@
+.brands__wrapper{
+	margin-bottom: 72px;
+}
+
 .brands {
 	/* display: none; */
 	min-height: 122px;
@@ -29,32 +33,30 @@
 	}
 }
 
-@media (width<900px){
-
-	.brands__list{
+@media (width<900px) {
+	.brands__list {
 		padding-inline: 16px;
 		gap: 20px 34px;
 	}
 
-	.brands__item:nth-child(1) svg{
+	.brands__item:nth-child(1) svg {
 		width: 117px;
 		height: 24px;
 	}
-	.brands__item:nth-child(2) svg{
+	.brands__item:nth-child(2) svg {
 		width: 64px;
 		height: 27px;
 	}
-	.brands__item:nth-child(3) svg{
+	.brands__item:nth-child(3) svg {
 		width: 109px;
 		height: 25px;
 	}
-	.brands__item:nth-child(4) svg{
+	.brands__item:nth-child(4) svg {
 		width: 127px;
 		height: 21px;
 	}
-	.brands__item:nth-child(5) svg{
+	.brands__item:nth-child(5) svg {
 		width: 135px;
 		height: 22px;
 	}
 }
-

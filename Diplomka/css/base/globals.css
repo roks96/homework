@@ -13,3 +13,11 @@
 	width: min(var(--container-width), 100% - var(--container-pudding) * 2);
 	margin: 0 auto;
 }
+
+.title-md {
+	font-family: var(--second-family);
+	font-weight: 900;
+	font-size: 48px;
+	color: var(--main-color);
+	text-transform: uppercase;
+}

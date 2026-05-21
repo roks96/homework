@@ -1,0 +1,114 @@
+.new-arrivals {
+	/* background-color: var(--bg-color); */
+	border-bottom: 1px solid #0000001a;
+	margin-bottom: 64px;
+}
+
+.new-arrivals__item-img {
+	border-radius: 20px;
+	margin-bottom: 16px;
+}
+
+.new-arrivals__title {
+	font-family: var(--second-family);
+	font-weight: 900;
+	font-size: 48px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+.new-arrivals__product {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 36px;
+}
+
+.new-arrivals__item-title {
+	margin-bottom: 8px;
+	color: var(--main-color);
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.new-arrivals__item-info {
+	display: flex;
+	margin-bottom: 8px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+/* для оценки 4/5 */
+.new-arrivals__item-info::before {
+	content: '';
+	display: block;
+	width: 104px;
+	height: 18px;
+	background-image: url('../../images/new arrivals/Rating4.5.svg');
+	margin-right: 13px;
+}
+
+.new-arrivals__item-info--black-color {
+	color: var(--main-color);
+}
+
+.new-arrivals__item-info--grey-color {
+	color: var(--accent-color);
+}
+
+.new-arrivals__item-text {
+	font-weight: 700;
+	font-size: 24px;
+	color: var(--main-color);
+}
+
+.new-arrivals__item-text--price {
+	font-weight: 700;
+	font-size: 24px;
+	text-decoration: line-through;
+	color: var(--accent-light-color);
+}
+
+/* для оценки 3/5 */
+.new-arrivals__rating::before {
+	content: '';
+	display: block;
+	width: 80px;
+	height: 18px;
+	background-image: url('../../images/new arrivals/Rating3.5.svg');
+}
+
+.new-arrivals__item-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.new-arrivals__item-text--discount {
+	display: flex;
+	align-items: center;
+	width: 62px;
+	height: 28px;
+	padding-inline: 14px;
+	border-radius: 62px;
+	background: #ff33331a;
+	font-weight: 500;
+	font-size: 12px;
+	color: #f33;
+}
+
+.new-arrivals__button-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.new-arrivals__button {
+	font-weight: 500;
+	color: var(--main-color);
+	border: 1px solid #0000001a;
+	width: 218px;
+	height: 52px;
+	border-radius: 62px;
+	padding-block: 16px;
+	margin-bottom: 64px;
+}

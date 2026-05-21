@@ -1,0 +1,97 @@
+.top-sellers__title {
+	margin-bottom: 55px;
+	display: flex;
+	justify-content: center;
+}
+
+.top-sellers__item-img {
+	margin-bottom: 16px;
+}
+
+.top-sellers__product {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 36px;
+}
+
+.top-sellers__item-title {
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--main-color);
+}
+
+.top-sellers__item-info {
+	display: flex;
+	font-weight: 400;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.top-sellers__item-info::before {
+	content: '';
+	display: block;
+	width: 113px;
+	height: 18px;
+	background-image: url('../../images/new arrivals/Rating5.svg');
+	margin-right: 13px;
+}
+
+.top-sellers__item-info--black-color {
+	color: var(--main-color);
+}
+
+.top-sellers__item-info--grey-color {
+	color: var(--accent-color);
+}
+
+.top-sellers__item-wrapper {
+	display: flex;
+	gap: 10px;
+}
+
+.top-sellers__item-text {
+	font-weight: 700;
+	font-size: 24px;
+	color: var(--main-color);
+}
+
+.top-sellers__item-rating4::before {
+	content: '';
+	display: block;
+	width: 89px;
+	height: 18px;
+	background-image: url('../../images/new arrivals/Rating4.svg');
+}
+
+.top-sellers__item-rating3::before {
+	content: '';
+	display: block;
+	width: 66px;
+	height: 18px;
+	background-image: url('../../images/new arrivals/Rating3.svg');
+}
+
+.top-sellers__item-rating4-5::before {
+	content: '';
+	display: block;
+	width: 104px;
+	height: 18px;
+	background-image: url('../../images/new arrivals/Rating4.5.svg');
+}
+
+.top-sellers__button-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.top-sellers__button {
+	font-weight: 500;
+	color: var(--main-color);
+	border: 1px solid #0000001a;
+	width: 218px;
+	height: 52px;
+	border-radius: 62px;
+	padding-block: 16px;
+	margin-bottom: 64px;
+}
