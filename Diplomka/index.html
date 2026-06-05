@@ -321,9 +321,9 @@ lang="ru"
                 </section>
             </div>
 
-            <section class="new-arrivals">
+            <section class="new-arrivals container">
                 <div class="container">
-                    <h2 class="new-arrivals__title">Новые поступления</h2>
+                    <h2 class="new-arrivals__title">Новые&nbspпоступления</h2>
                     <div class="new-arrivals__product">
                         <article class="new-arrivals__item">
                             <a
@@ -387,7 +387,7 @@ lang="ru"
                                 </div>
                             </a>
                         </article>
-                        <article class="new-arrivals__item">
+                        <article class="new-arrivals__item flex-item-three">
                             <a
                             class="new-arrivals__item-link"
                             href="#"
@@ -418,7 +418,7 @@ lang="ru"
                                 </div>
                             </a>
                         </article>
-                        <article class="new-arrivals__item">
+                        <article class="new-arrivals__item flex-item-four">
                             <a
                             class="new-arrivals__item-link"
                             href="#"
@@ -994,6 +994,24 @@ lang="ru"
         </main>
         <footer class="footer">
             <div class="footer__container container">
+
+                <div class="footer__banner-wrapper">
+                    <h2 class="footer__banner-text">БУДЬТЕ В КУРСЕ ВСЕХ<br>
+                        ПОСЛЕДНИХ НОВОСТЕЙ</h2>
+                    <div class="footer__form-wrapper">
+                            <input 
+                            class="footer__banner-input"
+                            type="email"
+                            required
+                            placeholder="Ваша почта"
+                            >
+                        <button class="footer__banner-button">Подписаться на рассылку</button>
+                    </div>
+
+                </div>
+
+
+
                 <div class="footer__info-wrapper">
                     <a
                     class="footer__logo"
@@ -1011,95 +1029,187 @@ lang="ru"
                         женщин и мужчин.</p>
                     <div class="footer__list-socialmedia">
                         <a href="#">
-                            <svg
-                            width="28"
-                            height="28"
-                            >
-                                <use
-                                class=""
-                                href="./icons/footers-socialmedia-sprite.svg#twitter"
+                            <div class="footer__list-item--twitter">
+                                <svg
+                                width="12"
+                                height="10"
                                 >
-    
-                                </use>
-                            </svg>
+                                    <use
+                                    class=""
+                                    href="./icons/footer-socialmedia-sprite.svg#twitter"
+                                    >
+
+                                    </use>
+                                </svg>
+                            </div>
                         </a>
                         <a href="#">
-                            <svg
-                            width="28"
-                            height="28"
-                            >
-                                <use
-                                class=""
-                                href="./icons/footers-socialmedia-sprite.svg#facebook"
+                            <div class="footer__list-item--facebook">
+                                <svg
+                                width="7"
+                                height="13"
                                 >
-    
-                                </use>
-                            </svg>
+                                    <use
+                                    class=""
+                                    href="./icons/footer-socialmedia-sprite.svg#facebook"
+                                    >
+
+                                    </use>
+                                </svg>
+                            </div>
                         </a>
                         <a href="#">
-                            <svg
-                            width="28"
-                            height="28"
-                            >
-                                <use
-                                class=""
-                                href="./icons/footers-socialmedia-sprite.svg#instagram"
+                            <div class="footer__list-item--instagram">
+                                <svg
+                                width="14"
+                                height="14"
                                 >
-    
-                                </use>
-                            </svg>
+                                    <use
+                                    class=""
+                                    href="./icons/footer-socialmedia-sprite.svg#instagram"
+                                    >
+
+                                    </use>
+                                </svg>
+                            </div>
                         </a>
                         <a href="#">
-                            <svg
-                            width="28"
-                            height="28"
-                            >
-                                <use
-                                class=""
-                                href="./icons/footers-socialmedia-sprite.svg#github"
+                            <div class="footer__list-item--github">
+                                <svg
+                                width="13"
+                                height="13"
                                 >
-    
-                                </use>
-                            </svg>
+                                    <use
+                                    class=""
+                                    href="./icons/footer-socialmedia-sprite.svg#github"
+                                    >
+
+                                    </use>
+                                </svg>
+                            </div>
                         </a>
                     </div>
                 </div>
 
                 <ul class="footer__info-list">
-                    <li>
+                    <li class="footer__info-list--title">
                         Компания
                     </li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Функции</a></li>
-                    <li><a href="#">Работы</a></li>
-                    <li><a href="#">Карьера</a></li>
+                    <li class="footer__info-list--text"><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >О нас</a></li>
+                    <li class="footer__info-list--text"><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Функции</a></li>
+                    <li class="footer__info-list--text"><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Работы</a></li>
+                    <li class="footer__info-list--text"><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Карьера</a></li>
                 </ul>
                 <ul class="footer__info-list">
-                    <li>
+                    <li class="footer__info-list--title">
                         Помощь
                     </li>
-                    <li><a href="#">Поддержка</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Условия</a></li>
-                    <li><a href="#">Политика</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Поддержка</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Доставка</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Условия</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Политика</a></li>
                 </ul>
                 <ul class="footer__info-list">
-                    <li>
+                    <li class="footer__info-list--title">
                         Вопросы
                     </li>
-                    <li><a href="#">Аккаунт</a></li>
-                    <li><a href="#">О доставке</a></li>
-                    <li><a href="#">Заказы</a></li>
-                    <li><a href="#">Платежи</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Аккаунт</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >О доставке</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Заказы</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Платежи</a></li>
                 </ul>
                 <ul class="footer__info-list">
-                    <li>
+                    <li class="footer__info-list--title">
                         Ресурсы
                     </li>
-                    <li><a href="#">Бесплатные книги</a></li>
-                    <li><a href="#">Уроки</a></li>
-                    <li><a href="#">Блог</a></li>
-                    <li><a href="#">Плейлист на YouTube</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Бесплатные книги</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Уроки</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Блог</a></li>
+                    <li
+                    class="class="
+                    footer__info-list--text""
+                    ><a
+                        class="footer__info-list--color-text"
+                        href="#"
+                        >Плейлист на YouTube</a></li>
                 </ul>
             </div>
             <div class="footer__inner container">
@@ -1113,7 +1223,7 @@ lang="ru"
                         >
                             <use
                             class=""
-                            href="./icons/footers-socialmedia-sprite.svg#visa"
+                            href="./icons/footer-socialmedia-sprite.svg#visa"
                             >
                             </use>
                         </svg>
@@ -1127,7 +1237,7 @@ lang="ru"
                         >
                             <use
                             class=""
-                            href="./icons/footers-socialmedia-sprite.svg#mastercard"
+                            href="./icons/footer-socialmedia-sprite.svg#mastercard"
                             >
                             </use>
                         </svg>
@@ -1140,7 +1250,7 @@ lang="ru"
                         >
                             <use
                             class=""
-                            href="./icons/footers-socialmedia-sprite.svg#paypal"
+                            href="./icons/footer-socialmedia-sprite.svg#paypal"
                             >
                             </use>
                         </svg>
@@ -1153,7 +1263,7 @@ lang="ru"
                         >
                             <use
                             class=""
-                            href="./icons/footers-socialmedia-sprite.svg#applepay"
+                            href="./icons/footer-socialmedia-sprite.svg#applepay"
                             >
                             </use>
                         </svg>
@@ -1166,7 +1276,7 @@ lang="ru"
                         >
                             <use
                             class=""
-                            href="./icons/footers-socialmedia-sprite.svg#googlepay"
+                            href="./icons/footer-socialmedia-sprite.svg#googlepay"
                             >
                             </use>
                         </svg>

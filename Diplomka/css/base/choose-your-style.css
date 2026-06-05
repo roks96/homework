@@ -1,7 +1,13 @@
+
+
+.choose-your-style{
+	display: none;
+}
+
 .choose-your-style__wrapper {
 	background-color: var(--secondary-color);
-	width: 1239px;
-	height: 866px;
+	max-width: 1239px;
+	min-height: 866px;
 	border-radius: 40px;
 	justify-content: center;
 	padding-top: 70px;

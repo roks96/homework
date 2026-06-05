@@ -1,3 +1,8 @@
+
+.top-sellers{
+	display: none;
+}
+
 .top-sellers__title {
 	margin-bottom: 55px;
 	display: flex;

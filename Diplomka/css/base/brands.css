@@ -1,4 +1,4 @@
-.brands__wrapper{
+.brands__wrapper {
 	margin-bottom: 72px;
 }
 
@@ -34,6 +34,9 @@
 }
 
 @media (width<900px) {
+	.brands__wrapper {
+		margin-bottom: 60px;
+	}
 	.brands__list {
 		padding-inline: 16px;
 		gap: 20px 34px;
@@ -58,5 +61,11 @@
 	.brands__item:nth-child(5) svg {
 		width: 135px;
 		height: 22px;
+	}
+}
+
+@media (width<500px) {
+	.brands__wrapper {
+		margin-bottom: 52px;
 	}
 }
