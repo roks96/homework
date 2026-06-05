@@ -1,0 +1,74 @@
+
+.what-about-us__title{
+	margin-bottom: 40px;
+}
+
+.what-about-us__wrapper {
+	position: relative;
+	margin-bottom: 170px;
+}
+
+.what-about-us__list{
+	display: grid;
+	grid-template-columns: repeat(5, 400px);
+	justify-content: center;
+	max-width: 1440px;
+	gap: 20px;
+}
+
+.what-about-us__button-wrapper {
+	display: flex;
+	gap: 16px;
+	position: absolute;
+	top: 6%;
+    left: 95.7%;
+}
+
+.what-about-us-card {
+	max-width: 400px;
+	max-height: 240px;
+	border: 1px solid #0000001a;
+	border-radius: 20px;
+	padding-block: 28px;
+	padding-inline: 32px;
+}
+
+.what-about-us__rating-wrapper {
+	display: flex;
+	gap: 6px;
+	margin-bottom: 16px;
+}
+
+.what-about-us__text-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 110%;
+	margin-bottom: 12px;
+}
+
+.what-about-us__text-title::after {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../../icons/Verified.svg);
+	margin-left: 6px;
+	transform: translateY(3px);
+}
+
+.what-about-us__text{
+    font-weight: 400;
+font-size: 16px;
+line-height: 138%;
+color: var(--accent-color);
+}
+
+.what-about-us__inner-right{
+	clip-path: inset(0 81% 0 0);
+	filter: blur(2px);
+}
+
+.what-about-us__inner-left{
+	clip-path: inset(0 0 0 81%);
+	filter: blur(2px)
+}
