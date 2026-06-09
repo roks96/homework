@@ -10,6 +10,8 @@
 
 .choose-your-style__title {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 	justify-content: center;
 	margin-bottom: 64px;
 }
@@ -121,7 +123,7 @@
 		max-width: 1100px;
 	}
 
-	.choose-your-style__title{
+	.choose-your-style__title {
 		font-size: 45px;
 	}
 
@@ -149,63 +151,253 @@
 		transform: translate(-12%, -18%);
 	}
 
-	.choose-your-style__product-text--evening-style{
+	.choose-your-style__product-text--evening-style {
 		font-size: 33px;
 		left: 18px;
 	}
 
-	.choose-your-style__product-image--evening-style{
+	.choose-your-style__product-image--evening-style {
 		transform: translate(-7%, -30%);
 	}
 
-	.choose-your-style__product-text--sport-style{
+	.choose-your-style__product-text--sport-style {
 		font-size: 33px;
 		left: 21px;
 	}
 
-	.choose-your-style__product-image--sport-style{
+	.choose-your-style__product-image--sport-style {
 		transform: translate(-3%, -29%);
 	}
 }
 
-@media (width<=1050px){
-	.choose-your-style__product{
+@media (width<=1050px) {
+	.choose-your-style__wrapper {
+		min-height: 730px;
+	}
+	.choose-your-style__product {
 		max-width: 850px;
 	}
 
-	.choose-your-style__product-text--free-style{
+	.choose-your-style__product-text--free-style {
 		font-size: 25px;
 		top: 15px;
 	}
 
-	.choose-your-style__product-image--free-style{
+	.choose-your-style__product-image--free-style {
 		min-width: 572px;
 		min-height: 383px;
 		right: -28%;
 		top: -28%;
 	}
 
-	.choose-your-style__product{
+	.choose-your-style__product {
 		grid-template-rows: repeat(2, 240px);
 	}
 
-	.choose-your-style__product-image--formal-style{
+	.choose-your-style__product-image--formal-style {
 		min-width: 709px;
 		min-height: 402px;
 	}
-
 }
 
-@media (width<=900px){
-	.choose-your-style__wrapper{
+@media (width<=900px) {
+	.choose-your-style__wrapper {
 		min-width: 800px;
+		min-height: 559px;
+		padding-top: 40px;
+	}
+	.choose-your-style__title {
+		font-size: 36px;
+		margin-bottom: 25px;
 	}
 
-	.choose-your-style__product{
+	.choose-your-style__product {
 		max-width: 760px;
-
+		grid-template-rows: repeat(2, 200px);
+	}
+	.choose-your-style__product-image--free-style {
+		right: -32%;
+		top: -33%;
 	}
 
-	
+	.choose-your-style__product-text--free-style {
+		font-size: 24px;
+		top: 13px;
+		left: 12px;
+	}
+	.choose-your-style__product-image--formal-style {
+		min-width: 585px;
+		transform: translate(-12%, -17%);
+	}
+	.choose-your-style__product-text--formal-style {
+		top: 13px;
+		left: 13px;
+		font-size: 24px;
+	}
+	.choose-your-style__product-image--evening-style {
+		min-width: 596px;
+	}
+	.choose-your-style__product-text--evening-style {
+		top: 13px;
+		left: 12px;
+		font-size: 24px;
+	}
+	.choose-your-style__product-image--sport-style {
+		min-width: 300px;
+	}
+	.choose-your-style__product-text--sport-style {
+		font-size: 24px;
+		top: 13px;
+	}
 }
 
+@media (width<=800px) {
+	.choose-your-style__wrapper {
+		min-width: 700px;
+	}
+	.choose-your-style__product {
+		max-width: 650px;
+	}
+
+	.choose-your-style__product-text--free-style {
+		font-size: 22px;
+	}
+
+	.choose-your-style__product-image--free-style {
+		right: -46%;
+	}
+
+	.choose-your-style__product-text--formal-style {
+		font-size: 22px;
+	}
+
+	.choose-your-style__product-image--formal-style {
+		transform: translate(-17%, -17%);
+	}
+	.choose-your-style__product-text--evening-style {
+		font-size: 22px;
+	}
+
+	.choose-your-style__product-image--evening-style {
+		transform: translate(-16%, -30%);
+	}
+	.choose-your-style__product-text--sport-style {
+		font-size: 22px;
+	}
+	.choose-your-style__product-image--sport-style {
+		transform: translate(-11%, -30%);
+	}
+}
+
+@media (width<=800px) {
+	.choose-your-style__wrapper {
+		max-width: 700px;
+		min-width: 590px;
+	}
+	.choose-your-style__title {
+		font-size: 32px;
+	}
+	.choose-your-style__product {
+		gap: 20px;
+		grid-template-rows: repeat(4, 200px);
+		padding-bottom: 35px;
+		max-width: 515px;
+	}
+	.choose-your-style__content:nth-child(1) {
+		grid-column: 1/9;
+		grid-row: 1/2;
+	}
+	.choose-your-style__content:nth-child(2) {
+		grid-column: 1/9;
+		grid-row: 2/3;
+	}
+	.choose-your-style__content:nth-child(3) {
+		grid-column: 1/9;
+		grid-row: 3/4;
+	}
+	.choose-your-style__content:nth-child(4) {
+		grid-column: 1/9;
+		grid-row: 4/5;
+	}
+	.choose-your-style__product-text--free-style {
+		font-size: 25px;
+		top: 22px;
+		left: 39px;
+	}
+	.choose-your-style__product-image--free-style {
+		right: 2%;
+		filter: blur(2px);
+	}
+	.choose-your-style__product-image--formal-style {
+		min-width: 487px;
+		transform: translate(-1%, -15%);
+		filter: blur(2px);
+	}
+	.choose-your-style__product-text--formal-style {
+		left: 39px;
+		top: 22px;
+		font-size: 25px;
+	}
+	.choose-your-style__product-text--evening-style {
+		left: 39px;
+		top: 22px;
+		font-size: 25px;
+	}
+	.choose-your-style__product-image--evening-style {
+		min-width: 492px;
+		transform: translate(4%, -30%);
+		filter: blur(2px);
+	}
+	.choose-your-style__product-text--sport-style {
+		left: 39px;
+		top: 22px;
+		font-size: 25px;
+	}
+	.choose-your-style__product-image--sport-style {
+		max-width: 61%;
+		transform: translate(35%, -30%);
+		filter: blur(2px);
+	}
+
+	@media (width<=600px) {
+		.choose-your-style__wrapper {
+			max-width: 590px;
+			min-width: 502px;
+		}
+		.choose-your-style__product {
+			max-width: 450px;
+		}
+	}
+	@media (width<=540px) {
+		.choose-your-style__product {
+			max-width: 400px;
+		}
+		.choose-your-style__wrapper {
+			min-width: 480px;
+		}
+		.choose-your-style__product-image--free-style {
+			right: -13%;
+		}
+	}
+	@media (width<=500px) {
+		.choose-your-style__product {
+			max-width: 350px;
+		}
+		.choose-your-style__wrapper {
+			min-width: 370px;
+		}
+		.choose-your-style__title {
+			font-size: 30px;
+			flex-wrap: wrap;
+		}
+	}
+	@media (width<=430px) {
+		.choose-your-style__wrapper {
+			min-width: 390px;
+		}
+		.choose-your-style__product {
+			
+		}
+		
+	}
+}
