@@ -1,1292 +1,998 @@
-<!DOCTYPE html>
-<html
-class="page"
-lang="ru"
->
+<!doctype html>
+<html class="page" lang="ru">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-        >
-        <link
-        href="./css/index.css"
-        rel="stylesheet"
-        >
-        <title>Магазин одежды SHOP.CO</title>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/index.css" rel="stylesheet" />
+  <title>Магазин одежды SHOP.CO</title>
+</head>
 
-    <body class="page__body">
-        <div class="banner">
-            <div class="banner__wrapper">
-                <p class="banner__text">Зарегистрируйтесь и получите скидку 20% на первую покупку. <span
-                    class="banner__link"
-                    >Зарегистрироваться&nbspсейчас</span></p>
-                <button class="banner__close">
-                    <svg
-                    width="24"
-                    height="24"
-                    >
-                        <use href="./icons/sprite.svg#cross"></use>
-                    </svg>
-                </button>
-            </div>
+<body class="page__body">
+  <div class="banner">
+    <div class="banner__wrapper">
+      <p class="banner__text">
+        Зарегистрируйтесь и получите скидку 20% на первую покупку.
+        <span class="banner__link">Зарегистрироваться&nbspсейчас</span>
+      </p>
+      <button class="banner__close">
+        <svg width="24" height="24">
+          <use href="./icons/sprite.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="banner--mobile">
+    <div class="banner__wrapper">
+      <p class="banner__text">Зарегистрироваться&nbspсейчас</p>
+      <button class="banner__close">
+        <svg width="24" height="24">
+          <use href="./icons/sprite.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__container">
+      <button class="header__burger">
+        <svg width="24" height="24">
+          <use class="burger__icon-menu" href="./icons/sprite.svg#burger"></use>
+        </svg>
+      </button>
+
+      <a class="logo header__logo" href="#">
+        <img class="logo__img" src="./icons/logo.svg" alt="Логотип магазина" width="160" height="22" />
+      </a>
+      <nav class="menu header__menu" id="" aria-label="Главное меню">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Магазин</a>
+
+            <svg class="" width="16" height="23">
+              <use class="header__actions-button--arrow-down" href="./icons/sprite.svg#down-arrow"></use>
+            </svg>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Скидки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Новые поступления</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__search">
+        <button class="header__search-icon">
+          <svg width="24" height="24">
+            <use class="" href="./icons/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <input class="header__search-form" type="search" placeholder="Искать товары..." />
+      </div>
+
+      <div class="header__actions">
+        <button class="header__search-icon--black">
+          <svg width="24" height="24">
+            <use class="" href="./icons/sprite.svg#search-black"></use>
+          </svg>
+        </button>
+
+        <button class="header__actions-button">
+          <svg width="24" height="24">
+            <use class="" href="./icons/sprite.svg#cart"></use>
+          </svg>
+        </button>
+
+        <button class="header__actions-button">
+          <svg width="24" height="24">
+            <use class="" href="./icons/sprite.svg#personal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <p class="hero__title">
+          НАЙДИ ОДЕЖДУ<br />
+          КОТОРАЯ ВЫРАЗИТ<br />
+          ТВОЙ СТИЛЬ
+        </p>
+        <p class="hero__subtitle">
+          Просмотрите наш набор тщательно сделанной одежды, созданный<br />
+          чтобы подчеркнуть ваш индивидуальный стиль.
+        </p>
+        <button class="hero__button">Купить сейчас</button>
+        <div class="stats">
+          <ul class="hero__stats">
+            <li class="stats__item stats__item--one">
+              <div>
+                <p class="stats__value">200+</p>
+                <p class="stats__label">Всемирных брендов</p>
+              </div>
+            </li>
+            <li class="stats__item stats__item--two">
+              <div>
+                <p class="stats__value">2,000+</p>
+                <p class="stats__label">Качественных товаров</p>
+              </div>
+            </li>
+            <li class="stats__item stats__item--three">
+              <div>
+                <p class="stats__value">30,000+</p>
+                <p class="stats__label">Счастливых клиентов</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="banner--mobile">
-            <div class="banner__wrapper">
-                <p class="banner__text ">Зарегистрироваться&nbspсейчас</p>
-                <button class="banner__close">
-                    <svg
-                    width="24"
-                    height="24"
-                    >
-                        <use href="./icons/sprite.svg#cross"></use>
-                    </svg>
-                </button>
-            </div>
+        <div class="hero__image-wrapper">
+          <svg class="hero__star hero__star--small" width="56" height="56">
+            <use href="./icons/header-sprite.svg#star-small"></use>
+          </svg>
+          <svg class="hero__star hero__star--large" width="104" height="104">
+            <use href="./icons/header-sprite.svg#star-large"></use>
+          </svg>
+          <picture class="hero__image">
+            <source srcset="./images/man-and-women.webp" type="image/webp" />
+            <img class="hero__images" src="./images/man-and-women.jpg" width="672" height="1009"
+              alt="Мужчина и женщина позируют в одежде магазина" />
+          </picture>
         </div>
-        <header class="header">
-            <div class="container header__container">
-                <button class="header__burger">
-                    <svg
-                    width="24"
-                    height="24"
-                    >
-                        <use
-                        class="burger__icon-menu"
-                        href="./icons/sprite.svg#burger"
-                        >
+      </div>
+    </section>
 
-                        </use>
-                    </svg>
-                </button>
+    <div class="brands__wrapper">
+      <section class="brands">
+        <ul class="brands__list">
+          <li class="brands__item">
+            <svg width="167" height="34">
+              <use class="" href="./icons/brands-sprite.svg#versace"></use>
+            </svg>
+          </li>
+          <li class="brands__item">
+            <svg width="91" height="38">
+              <use class="" href="./icons/brands-sprite.svg#zara"></use>
+            </svg>
+          </li>
+          <li class="brands__item">
+            <svg width="156" height="36">
+              <use class="" href="./icons/brands-sprite.svg#gucci"></use>
+            </svg>
+          </li>
+          <li class="brands__item">
+            <svg width="194" height="32">
+              <use class="" href="./icons/brands-sprite.svg#prada"></use>
+            </svg>
+          </li>
+          <li class="brands__item">
+            <svg width="207" height="34">
+              <use class="" href="./icons/brands-sprite.svg#calvinklein"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </div>
 
-                <a
-                class="logo header__logo"
-                href="#"
-                >
-                    <img
-                    class="logo__img"
-                    src="./icons/logo.svg"
-                    alt="Логотип магазина"
-                    width="160"
-                    height="22"
-                    >
-                </a>
-                <nav
-                class="menu header__menu"
-                id=""
-                aria-label="Главное меню"
-                >
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a
-                            class="menu__link"
-                            href="#"
-                            >Магазин</a>
+    <section class="new-arrivals container">
+      <div class="container">
+        <h2 class="new-arrivals__title">Новые&nbspпоступления</h2>
+        <div class="new-arrivals__product">
+          <article class="new-arrivals__item">
+            <a class="new-arrivals__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/T-shirt with ribbon.webp" type="image/webp" />
 
-                            <svg
-                            class=""
-                            width="16"
-                            height="16"
-                            >
-                                <use
-                                class="header__actions-button--arrow-down"
-                                href="./icons/sprite.svg#down-arrow"
-                                >
-                                </use>
-                            </svg>
-
-                        </li>
-                        <li class="menu__item">
-                            <a
-                            class="menu__link"
-                            href="#"
-                            >Скидки</a>
-                        </li>
-                        <li class="menu__item">
-                            <a
-                            class="menu__link"
-                            href="#"
-                            >Новые поступления</a>
-                        </li>
-                        <li class="menu__item">
-                            <a
-                            class="menu__link"
-                            href="#"
-                            >Бренды</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="header__search">
-
-                    <button class="header__search-icon">
-                        <svg
-                        width="24"
-                        height="24"
-                        >
-                            <use
-                            class=""
-                            href="./icons/sprite.svg#search"
-                            >
-                            </use>
-                        </svg>
-                    </button>
-                    <input
-                    class="header__search-form"
-                    type="search"
-                    placeholder="Искать товары..."
-                    >
-
+                <img class="new-arrivals__item-img" src="./images/new arrivals/T-shirt with ribbon.png"
+                  alt="Футболка с лентой" width="295" height="298" />
+              </picture>
+              <div class="new-arrivals__item-content">
+                <h3 class="new-arrivals__item-title">Футболка с лентой</h3>
+                <div class="new-arrivals__item-info">
+                  <span class="new-arrivals__item-info--black-color">4.5/</span>
+                  <span class="new-arrivals__item-info--grey-color">5</span>
                 </div>
+                <p class="new-arrivals__item-text">₽5000</p>
+              </div>
+            </a>
+          </article>
+          <article class="new-arrivals__item">
+            <a class="new-arrivals__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/Skinny jeans.webp" type="image/webp" />
 
-
-
-                <div class="header__actions">
-                    <button class="header__search-icon--black">
-                        <svg
-                        width="24"
-                        height="24"
-                        >
-                            <use
-                            class=""
-                            href="./icons/sprite.svg#search-black"
-                            >
-                            </use>
-                        </svg>
-
-                    </button>
-
-                    <button class="header__actions-button">
-                        <svg
-                        width="24"
-                        height="24"
-                        >
-                            <use
-                            class=""
-                            href="./icons/sprite.svg#cart"
-                            >
-                            </use>
-                        </svg>
-                    </button>
-
-                    <button class="header__actions-button">
-                        <svg
-                        width="24"
-                        height="24"
-                        >
-                            <use
-                            class=""
-                            href="./icons/sprite.svg#personal"
-                            >
-                            </use>
-                        </svg>
-                    </button>
+                <img class="new-arrivals__item-img" src="./images/new arrivals/Skinny jeans.png" alt="Узкие джинсы"
+                  width="295" height="298" />
+              </picture>
+              <div class="new-arrivals__item-content">
+                <h3 class="new-arrivals__item-title">Узкие джинсы</h3>
+                <div class="new-arrivals__item-info new-arrivals__rating">
+                  <span class="new-arrivals__item-info--black-color">3.5/</span>
+                  <span class="new-arrivals__item-info--grey-color">5</span>
                 </div>
+                <div class="new-arrivals__item-wrapper">
+                  <span class="new-arrivals__item-text">₽5000</span>
+                  <span class="new-arrivals__item-text--price">₽6000</span>
+                  <span class="new-arrivals__item-text--discount">-20%</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="new-arrivals__item flex-item-three">
+            <a class="new-arrivals__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/Plaid shirt.webp" type="image/webp" />
+
+                <img class="new-arrivals__item-img" src="./images/new arrivals/Plaid shirt.png" alt="Узкие джинсы"
+                  width="295" height="298" />
+              </picture>
+              <div class="new-arrivals__item-content">
+                <h3 class="new-arrivals__item-title">Клетчатая рубашка</h3>
+                <div class="new-arrivals__item-info">
+                  <span class="new-arrivals__item-info--black-color">4.5/</span>
+                  <span class="new-arrivals__item-info--grey-color">5</span>
+                </div>
+                <div class="new-arrivals__item-wrapper">
+                  <span class="new-arrivals__item-text">₽7000</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="new-arrivals__item flex-item-four">
+            <a class="new-arrivals__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/T-shirt with stripes.webp" type="image/webp" />
+
+                <img class="new-arrivals__item-img" src="./images/new arrivals/T-shirt with stripes.png"
+                  alt="Узкие джинсы" width="295" height="298" />
+              </picture>
+              <div class="new-arrivals__item-content">
+                <h3 class="new-arrivals__item-title">Футболка с полосами</h3>
+                <div class="new-arrivals__item-info">
+                  <span class="new-arrivals__item-info--black-color">4.5/</span>
+                  <span class="new-arrivals__item-info--grey-color">5</span>
+                </div>
+                <div class="new-arrivals__item-wrapper">
+                  <span class="new-arrivals__item-text">₽6000</span>
+                  <span class="new-arrivals__item-text--price">₽8000</span>
+                  <span class="new-arrivals__item-text--discount">-30%</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="new-arrivals__button-wrapper">
+          <button class="new-arrivals__button">Посмотреть все</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-sellers">
+      <div class="container">
+        <h2 class="top-sellers__title title-md">Лидеры продаж</h2>
+        <div class="top-sellers__product">
+          <article class="top-sellers__item">
+            <a class="top-sellers__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/Striped shirt.webp" type="image/webp" />
+
+                <img class="top-sellers__item-img" src="./images/new arrivals/Striped shirt.png" alt="Футболка с лентой"
+                  width="295" height="298" />
+              </picture>
+              <div class="top-sellers__item-content">
+                <h3 class="top-sellers__item-title">Рубашка в полоску</h3>
+                <div class="top-sellers__item-info">
+                  <span class="top-sellers__item-info--black-color">5/</span>
+                  <span class="top-sellers__item-info--grey-color">5</span>
+                </div>
+                <div class="top-sellers__item-wrapper">
+                  <p class="top-sellers__item-text">₽5000</p>
+                  <span class="new-arrivals__item-text--price">₽6000</span>
+                  <span class="new-arrivals__item-text--discount">-20%</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="top-sellers__item">
+            <a class="top-sellers__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/T-shirt «Courage.webp" type="image/webp" />
+
+                <img class="top-sellers__item-img" src="./images/new arrivals/T-shirt «Courage.png"
+                  alt="Футболка «Courage" width="295" height="298" />
+              </picture>
+              <div class="top-sellers__item-content">
+                <h3 class="top-sellers__item-title">Футболка «Courage»</h3>
+                <div class="top-sellers__item-info top-sellers__item-rating4">
+                  <span class="top-sellers__item-info--black-color">4.0/</span>
+                  <span class="top-sellers__item-info--grey-color">5</span>
+                </div>
+                <p class="top-sellers__item-text">₽5000</p>
+              </div>
+            </a>
+          </article>
+          <article class="top-sellers__item item-three">
+            <a class="top-sellers__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/Loose Bermudas.webp" type="image/webp" />
+
+                <img class="top-sellers__item-img" src="./images/new arrivals/Loose Bermudas.png"
+                  alt="Свободные бермуды" width="295" height="298" />
+              </picture>
+              <div class="top-sellers__item-content">
+                <h3 class="top-sellers__item-title">Свободные бермуды</h3>
+                <div class="top-sellers__item-info top-sellers__item-rating3">
+                  <span class="top-sellers__item-info--black-color">3.0/</span>
+                  <span class="top-sellers__item-info--grey-color">5</span>
+                </div>
+                <p class="top-sellers__item-text">₽4000</p>
+              </div>
+            </a>
+          </article>
+          <article class="top-sellers__item item-four">
+            <a class="top-sellers__item-link" href="#">
+              <picture>
+                <source src="./images/new arrivals/Faded skinny jeans.webp" type="image/webp" />
+
+                <img class="top-sellers__item-img" src="./images/new arrivals/Faded skinny jeans.png"
+                  alt="Потертые узкие джинсы" width="295" height="298" />
+              </picture>
+              <div class="top-sellers__item-content">
+                <h3 class="top-sellers__item-title">Потертые узкие джинсы</h3>
+                <div class="top-sellers__item-info top-sellers__item-rating4-5">
+                  <span class="top-sellers__item-info--black-color">4.5/</span>
+                  <span class="top-sellers__item-info--grey-color">5</span>
+                </div>
+                <p class="top-sellers__item-text">₽7000</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="top-sellers__button-wrapper">
+          <button class="top-sellers__button">Посмотреть все</button>
+        </div>
+      </div>
+    </section>
+    <section class="choose-your-style">
+      <div class="choose-your-style__wrapper container">
+        <h2 class="choose-your-style__title title-md">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+        <div class="choose-your-style__product">
+          <div class="choose-your-style__content">
+            <div class="choose-your-style__product-wrapper--free-style">
+              <h3 class="choose-your-style__product-text--free-style">
+                Свободный
+              </h3>
+
+              >
+              <img class="choose-your-style__product-image--free-style" src="./images/new arrivals/free style.png"
+                alt="На картинке мужчина в одежде - свободный стиль" />
             </div>
-        </header>
-        <main class="main">
-            <section class="hero">
-                <div class="container hero__container">
-                    <p class="hero__title">НАЙДИ ОДЕЖДУ<br> КОТОРАЯ ВЫРАЗИТ<br> ТВОЙ СТИЛЬ</p>
-                    <p class="hero__subtitle">Просмотрите наш набор тщательно сделанной одежды, созданный<br> чтобы
-                        подчеркнуть ваш индивидуальный
-                        стиль.</p>
-                    <button class="hero__button">
-                        Купить сейчас
-                    </button>
-                    <div class="stats">
-                        <ul class=" hero__stats">
-                            <li class="stats__item stats__item--one">
-                                <div>
-                                    <p class="stats__value">200+</p>
-                                    <p class="stats__label">Всемирных брендов</p>
-                                </div>
-                            </li>
-                            <li class="stats__item stats__item--two">
-                                <div>
-                                    <p class="stats__value">2,000+</p>
-                                    <p class="stats__label">Качественных товаров</p>
-                                </div>
-                            </li>
-                            <li class="stats__item stats__item--three">
-                                <div>
-                                    <p class="stats__value">30,000+</p>
-                                    <p class="stats__label">Счастливых клиентов</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="hero__image-wrapper">
-                        <svg
-                        class="hero__star hero__star--small"
-                        width="56"
-                        height="56"
-                        >
-                            <use href="./icons/header-sprite.svg#star-small">
+          </div>
+          <div class="choose-your-style__content">
+            <div class="choose-your-style__product-wrapper">
+              <h3 class="choose-your-style__product-text--formal-style">
+                Формальный
+              </h3>
+              <img class="choose-your-style__product-image--formal-style" src="./images/new arrivals/formal style.png"
+                alt="На картинке мужчина в одежде - свободный стиль" />
+            </div>
+          </div>
+          <div class="choose-your-style__content">
+            <div class="choose-your-style__product-wrapper">
+              <h3 class="choose-your-style__product-text--evening-style">
+                Вечерний
+              </h3>
+              <img class="choose-your-style__product-image--evening-style" src="./images/new arrivals/evening style.png"
+                alt="На картинке мужчина в одежде - свободный стиль" />
+            </div>
+          </div>
+          <div class="choose-your-style__content">
+            <div class="choose-your-style__product-wrapper">
+              <h3 class="choose-your-style__product-text--sport-style">
+                Спорт
+              </h3>
+              <img class="choose-your-style__product-image--sport-style" src="./images/new arrivals/sport style.png"
+                alt="На картинке мужчина в одежде - свободный стиль" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="what-about-us">
+      <div class="what-about-us__wrapper container">
+        <h2 class="what-about-us__title title-md">что о нас говорят</h2>
+        <div class="what-about-us__button-wrapper">
+          <button class="what-about-us__button--left">
+            <svg class="" width="23" height="23">
+              <use class="" href="./icons/What-about-us.svg#slider-button-left"></use>
+            </svg>
+          </button>
+          <button class="what-about-us__button-right">
+            <svg class="" width="23" height="23">
+              <use class="" href="./icons/What-about-us.svg#slider-button-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="what-about-us__list">
+          <article class="what-about-us-card what-about-us__item-one">
+            <div class="what-about-us__rating-wrapper">
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+            </div>
 
-                            </use>
-                        </svg>
-                        <svg
-                        class="hero__star hero__star--large"
-                        width="104"
-                        height="104"
+            <h3 class="what-about-us__text-title">Виталий У.</h3>
+            <p class="what-about-us__text">
+              «Я в восторге от качества и стиля одежды,&nbspкоторую получил от
+              Shop.co. От повседневных вещей до элегантных платьев — каждая
+              покупка превзошла мои ожидания.»
+            </p>
+          </article>
+          <article class="what-about-us-card what-about-us__item-two">
+            <div class="what-about-us__rating-wrapper">
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+            </div>
+
+            <h3 class="what-about-us__text-title">Даниил В.</h3>
+            <p class="what-about-us__text">
+              «Раньше было трудно найти одежду под мой стиль, пока я не открыл
+              Shop.co. Их ассортимент впечатляет и подходит для разных вкусов
+              и случаев.»
+            </p>
+          </article>
+          <article class="what-about-us-card what-about-us__item-three">
+            <div class="what-about-us__rating-wrapper">
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+            </div>
+
+            <h3 class="what-about-us__text-title">Альберт Б.</h3>
+            <p class="what-about-us__text">
+              «Я всегда ищу уникальные модные вещи и&nbspбыл рад открыть для
+              себя Shop.co. Их выбор одежды очень разнообразен и полностью
+              соответствует последним модным трендам.»
+            </p>
+          </article>
+          <article class="what-about-us-card what-about-us__item-four">
+            <div class="what-about-us__rating-wrapper">
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+            </div>
+
+            <h3 class="what-about-us__text-title">Sarah M.</h3>
+            <p class="what-about-us__text">
+              «Я поражён качеством и стилем одежды, которую получил от
+              Shop.co. От повседневной одежды до элегантных платьев — каждая
+              вещь, которую я купил,&nbspпревзошла мои ожидания.»
+            </p>
+          </article>
+          <article class="what-about-us-card what-about-us__item-five">
+            <div class="what-about-us__rating-wrapper">
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+            </div>
+
+            <h3 class="what-about-us__text-title">Матвей К.</h3>
+            <p class="what-about-us__text">
+              «Я всегда ищу уникальные модные вещи и рад, что открыл Shop.co.
+              Их ассортимент одежды разнообразен и полностью соответствует
+              последним модным тенденциям.»
+            </p>
+          </article>
+          <article class="what-about-us-card what-about-us__item-six">
+            <div class="what-about-us__rating-wrapper">
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+              <svg class="what-about-us__icon--star" width="23" height="23">
+                <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+              </svg>
+            </div>
+
+            <h3 class="what-about-us__text-title">Максим А.</h3>
+            <p class="what-about-us__text">
+              «Я впечатлён качеством и стилем одежды от Shop.co. От
+              повседневных вещей до элегантных платьев — каждая покупка
+              превзошла мои ожидания.»
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__banner-container">
+        <div class="footer__banner-wrapper">
+          <h2 class="footer__banner-text">
+            БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ
+          </h2>
+          <div class="footer__form-wrapper">
+            <input class="footer__banner-input" type="email" required placeholder="Ваша почта" />
+            <button class="footer__banner-button">
+              Подписаться на рассылку
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__info-container">
+        <div class="footer__info-wrapper">
+          <a class="footer__logo" href="#">
+            <img src="./icons/SHOP.CO-footer.svg" alt="Логотип магазина одежды SHOP.CO" width="167px" height="23px" />
+          </a>
+          <p class="footer__desc">
+            У нас есть одежда, что подходит вашему стилю и которой можно
+            гордиться. Для женщин и мужчин.
+          </p>
+          <div class="footer__list-socialmedia">
+            <a href="#">
+              <div class="footer__list-item--twitter">
+                <svg width="12" height="10">
+                  <use class="" href="./icons/footer-socialmedia-sprite.svg#twitter"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer__list-item--facebook">
+                <svg width="7" height="13">
+                  <use class="" href="./icons/footer-socialmedia-sprite.svg#facebook"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer__list-item--instagram">
+                <svg width="14" height="14">
+                  <use class="" href="./icons/footer-socialmedia-sprite.svg#instagram"></use>
+                </svg>
+              </div>
+            </a>
+            <a href="#">
+              <div class="footer__list-item--github">
+                <svg width="13" height="13">
+                  <use class="" href="./icons/footer-socialmedia-sprite.svg#github"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="footer__info-list-wrapper">
+          <ul class="footer__info-list">
+            <li class="footer__info-list--title">Компания</li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">О нас</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Функции</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Работы</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Карьера</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="">
+          <ul class="footer__info-list">
+            <li class="footer__info-list--title">
+              Помощь
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Поддержка</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Доставка</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Условия</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Политика</a>
+            </li>
+          </ul>
+
+
+        </div>
+
+        <div class="">
+          <ul class="footer__info-list">
+            <li class="footer__info-list--title">
+              Вопросы
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Аккаунт</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">О
+                доставке</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Заказы</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Платежи</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="footer__info-list">
+            <li class="footer__info-list--title">
+              Ресурсы
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Бесплатные
+                книги</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Уроки</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Блог</a>
+            </li>
+            <li class="footer__info-list--text">
+              <a class="footer__info-list--color-text" href="#">Плейлист на
+                YouTube</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <!-- <div class="footer__info-wrapper">
+                        <a
+                        class="footer__logo"
+                        href="#"
                         >
-                            <use href="./icons/header-sprite.svg#star-large"></use>
-                        </svg>
-                        <picture class="hero__image">
-                            <source
-                            srcset="./images/man-and-women.webp"
-                            type="image/webp"
-                            >
                             <img
-                            class="hero__images"
-                            src="./images/man-and-women.jpg"
-                            width="672"
-                            height="1009"
-                            alt="Мужчина и женщина позируют в одежде магазина"
+                            class="footer__img"
+                            src="./icons/SHOP.CO-footer.svg"
+                            alt="Логотип магазина одежды SHOP.CO"
+                            width="167px"
+                            height="23px"
                             >
-                        </picture>
+                        </a>
+                        <p class="footer__desc">У нас есть одежда, что подходит вашему стилю и которой можно гордиться. Для
+                            женщин и мужчин.</p>
+                        <div class="footer__list-socialmedia">
+                            <a href="#">
+                                <div class="footer__list-item--twitter">
+                                    <svg
+                                    width="12"
+                                    height="10"
+                                    >
+                                        <use
+                                        class=""
+                                        href="./icons/footer-socialmedia-sprite.svg#twitter"
+                                        >
+    
+                                        </use>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="footer__list-item--facebook">
+                                    <svg
+                                    width="7"
+                                    height="13"
+                                    >
+                                        <use
+                                        class=""
+                                        href="./icons/footer-socialmedia-sprite.svg#facebook"
+                                        >
+    
+                                        </use>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="footer__list-item--instagram">
+                                    <svg
+                                    width="14"
+                                    height="14"
+                                    >
+                                        <use
+                                        class=""
+                                        href="./icons/footer-socialmedia-sprite.svg#instagram"
+                                        >
+    
+                                        </use>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="footer__list-item--github">
+                                    <svg
+                                    width="13"
+                                    height="13"
+                                    >
+                                        <use
+                                        class=""
+                                        href="./icons/footer-socialmedia-sprite.svg#github"
+                                        >
+    
+                                        </use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                </div>
-            </section>
-
-            <div class="brands__wrapper">
-                <section class="brands">
-                    <ul class="brands__list">
-                        <li class="brands__item">
-                            <svg
-                            width="167"
-                            height="34"
-                            >
-                                <use
-                                class=""
-                                href="./icons/brands-sprite.svg#versace"
-                                >
-                                </use>
-                            </svg>
+    
+                    <ul class="footer__info-list">
+                        <li class="footer__info-list--title">
+                            Компания
                         </li>
-                        <li class="brands__item">
-                            <svg
-                            width="91"
-                            height="38"
-                            >
-                                <use
-                                class=""
-                                href="./icons/brands-sprite.svg#zara"
-                                >
-                                </use>
-                            </svg>
-                        </li>
-                        <li class="brands__item">
-                            <svg
-                            width="156"
-                            height="36"
-                            >
-                                <use
-                                class=""
-                                href="./icons/brands-sprite.svg#gucci"
-                                >
-                                </use>
-                            </svg>
-                        </li>
-                        <li class="brands__item">
-                            <svg
-                            width="194"
-                            height="32"
-                            >
-                                <use
-                                class=""
-                                href="./icons/brands-sprite.svg#prada"
-                                >
-                                </use>
-                            </svg>
-                        </li>
-                        <li class="brands__item">
-                            <svg
-                            width="207"
-                            height="34"
-                            >
-                                <use
-                                class=""
-                                href="./icons/brands-sprite.svg#calvinklein"
-                                >
-                                </use>
-                            </svg>
-                        </li>
+                        <li class="footer__info-list--text"><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >О нас</a></li>
+                        <li class="footer__info-list--text"><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >Функции</a></li>
+                        <li class="footer__info-list--text"><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >Работы</a></li>
+                        <li class="footer__info-list--text"><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >Карьера</a></li>
                     </ul>
-                </section>
-            </div>
-
-            <section class="new-arrivals container">
-                <div class="container">
-                    <h2 class="new-arrivals__title">Новые&nbspпоступления</h2>
-                    <div class="new-arrivals__product">
-                        <article class="new-arrivals__item">
-                            <a
-                            class="new-arrivals__item-link"
+                    <ul class="footer__info-list">
+                        <li class="footer__info-list--title">
+                            Помощь
+                        </li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/T-shirt with ribbon.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="new-arrivals__item-img"
-                                    src="./images/new arrivals/T-shirt with ribbon.png"
-                                    alt="Футболка с лентой"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="new-arrivals__item-content">
-                                    <h3 class="new-arrivals__item-title">Футболка с лентой</h3>
-                                    <div class="new-arrivals__item-info">
-                                        <span class="new-arrivals__item-info--black-color">4.5/</span>
-                                        <span class="new-arrivals__item-info--grey-color">5</span>
-                                    </div>
-                                    <p class="new-arrivals__item-text">₽5000</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="new-arrivals__item">
-                            <a
-                            class="new-arrivals__item-link"
+                            >Поддержка</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/Skinny jeans.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="new-arrivals__item-img"
-                                    src="./images/new arrivals/Skinny jeans.png"
-                                    alt="Узкие джинсы"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="new-arrivals__item-content">
-                                    <h3 class="new-arrivals__item-title">Узкие джинсы</h3>
-                                    <div class="new-arrivals__item-info new-arrivals__rating">
-                                        <span class="new-arrivals__item-info--black-color">3.5/</span>
-                                        <span class="new-arrivals__item-info--grey-color">5</span>
-                                    </div>
-                                    <div class="new-arrivals__item-wrapper">
-                                        <span class="new-arrivals__item-text">₽5000</span>
-                                        <span class="new-arrivals__item-text--price">₽6000</span>
-                                        <span class="new-arrivals__item-text--discount">-20%</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="new-arrivals__item flex-item-three">
-                            <a
-                            class="new-arrivals__item-link"
+                            >Доставка</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/Plaid shirt.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="new-arrivals__item-img"
-                                    src="./images/new arrivals/Plaid shirt.png"
-                                    alt="Узкие джинсы"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="new-arrivals__item-content">
-                                    <h3 class="new-arrivals__item-title">Клетчатая рубашка</h3>
-                                    <div class="new-arrivals__item-info">
-                                        <span class="new-arrivals__item-info--black-color">4.5/</span>
-                                        <span class="new-arrivals__item-info--grey-color">5</span>
-                                    </div>
-                                    <div class="new-arrivals__item-wrapper">
-                                        <span class="new-arrivals__item-text">₽7000</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="new-arrivals__item flex-item-four">
-                            <a
-                            class="new-arrivals__item-link"
+                            >Условия</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/T-shirt with stripes.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="new-arrivals__item-img"
-                                    src="./images/new arrivals/T-shirt with stripes.png"
-                                    alt="Узкие джинсы"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="new-arrivals__item-content">
-                                    <h3 class="new-arrivals__item-title">Футболка с полосами</h3>
-                                    <div class="new-arrivals__item-info">
-                                        <span class="new-arrivals__item-info--black-color">4.5/</span>
-                                        <span class="new-arrivals__item-info--grey-color">5</span>
-                                    </div>
-                                    <div class="new-arrivals__item-wrapper">
-                                        <span class="new-arrivals__item-text">₽6000</span>
-                                        <span class="new-arrivals__item-text--price">₽8000</span>
-                                        <span class="new-arrivals__item-text--discount">-30%</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="new-arrivals__button-wrapper">
-                        <button class="new-arrivals__button">Посмотреть все</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="top-sellers">
-                <div class="container">
-                    <h2 class="top-sellers__title title-md">Лидеры продаж</h2>
-                    <div class="top-sellers__product">
-                        <article class="top-sellers__item">
-                            <a
-                            class="top-sellers__item-link"
+                            >Политика</a></li>
+                    </ul>
+                    <ul class="footer__info-list">
+                        <li class="footer__info-list--title">
+                            Вопросы
+                        </li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/Striped shirt.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="top-sellers__item-img"
-                                    src="./images/new arrivals/Striped shirt.png"
-                                    alt="Футболка с лентой"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="top-sellers__item-content">
-                                    <h3 class="top-sellers__item-title">Рубашка в полоску</h3>
-                                    <div class="top-sellers__item-info">
-                                        <span class="top-sellers__item-info--black-color">5/</span>
-                                        <span class="top-sellers__item-info--grey-color">5</span>
-                                    </div>
-                                    <div class="top-sellers__item-wrapper">
-                                        <p class="top-sellers__item-text">₽5000</p>
-                                        <span class="new-arrivals__item-text--price">₽6000</span>
-                                        <span class="new-arrivals__item-text--discount">-20%</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="top-sellers__item">
-                            <a
-                            class="top-sellers__item-link"
+                            >Аккаунт</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/T-shirt «Courage.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="top-sellers__item-img"
-                                    src="./images/new arrivals/T-shirt «Courage.png"
-                                    alt="Футболка «Courage"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="top-sellers__item-content">
-                                    <h3 class="top-sellers__item-title">Футболка «Courage»</h3>
-                                    <div class="top-sellers__item-info top-sellers__item-rating4">
-                                        <span class="top-sellers__item-info--black-color">4.0/</span>
-                                        <span class="top-sellers__item-info--grey-color">5</span>
-                                    </div>
-                                    <p class="top-sellers__item-text">₽5000</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="top-sellers__item item-three">
-                            <a
-                            class="top-sellers__item-link"
+                            >О доставке</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/Loose Bermudas.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="top-sellers__item-img"
-                                    src="./images/new arrivals/Loose Bermudas.png"
-                                    alt="Свободные бермуды"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="top-sellers__item-content">
-                                    <h3 class="top-sellers__item-title">Свободные бермуды</h3>
-                                    <div class="top-sellers__item-info top-sellers__item-rating3">
-                                        <span class="top-sellers__item-info--black-color">3.0/</span>
-                                        <span class="top-sellers__item-info--grey-color">5</span>
-                                    </div>
-                                    <p class="top-sellers__item-text">₽4000</p>
-                                </div>
-                            </a>
-                        </article>
-                        <article class="top-sellers__item item-four">
-                            <a
-                            class="top-sellers__item-link"
+                            >Заказы</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
                             href="#"
-                            >
-                                <picture>
-                                    <source
-                                    src="./images/new arrivals/Faded skinny jeans.webp"
-                                    type="image/webp"
-                                    >
-
-                                    <img
-                                    class="top-sellers__item-img"
-                                    src="./images/new arrivals/Faded skinny jeans.png"
-                                    alt="Потертые узкие джинсы"
-                                    width="295"
-                                    height="298"
-                                    >
-                                </picture>
-                                <div class="top-sellers__item-content ">
-                                    <h3 class="top-sellers__item-title">Потертые узкие джинсы</h3>
-                                    <div class="top-sellers__item-info top-sellers__item-rating4-5">
-                                        <span class="top-sellers__item-info--black-color">4.5/</span>
-                                        <span class="top-sellers__item-info--grey-color">5</span>
-                                    </div>
-                                    <p class="top-sellers__item-text">₽7000</p>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="top-sellers__button-wrapper">
-                        <button class="top-sellers__button">Посмотреть все</button>
-                    </div>
-                </div>
-            </section>
-            <section class="choose-your-style">
-                <div class="choose-your-style__wrapper container">
-                    <h2 class="choose-your-style__title title-md"> ВЫБЕРИ СВОЙ СТИЛЬ
-                    </h2>
-                    <div class="choose-your-style__product">
-                        <div class="choose-your-style__content">
-                            <div class="choose-your-style__product-wrapper--free-style">
-                                <h3 class="choose-your-style__product-text--free-style">Свободный</h3>
-
-                                >
-                                <img
-                                class="choose-your-style__product-image--free-style"
-                                src="./images/new arrivals/free style.png"
-                                alt="На картинке мужчина в одежде - свободный стиль"
-                                >
-                            </div>
-                        </div>
-                        <div class="choose-your-style__content">
-                            <div class="choose-your-style__product-wrapper">
-                                <h3 class="choose-your-style__product-text--formal-style">Формальный</h3>
-                                <img
-                                class="choose-your-style__product-image--formal-style"
-                                src="./images/new arrivals/formal style.png"
-                                alt="На картинке мужчина в одежде - свободный стиль"
-                                >
-                            </div>
-                        </div>
-                        <div class="choose-your-style__content">
-                            <div class="choose-your-style__product-wrapper">
-                                <h3 class="choose-your-style__product-text--evening-style">Вечерний</h3>
-                                <img
-                                class="choose-your-style__product-image--evening-style"
-                                src="./images/new arrivals/evening style.png"
-                                alt="На картинке мужчина в одежде - свободный стиль"
-                                >
-                            </div>
-                        </div>
-                        <div class="choose-your-style__content">
-                            <div class="choose-your-style__product-wrapper">
-                                <h3 class="choose-your-style__product-text--sport-style">Спорт</h3>
-                                <img
-                                class="choose-your-style__product-image--sport-style"
-                                src="./images/new arrivals/sport style.png"
-                                alt="На картинке мужчина в одежде - свободный стиль"
-                                >
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <section class="what-about-us">
-                <div class="what-about-us__wrapper container">
-                    <h2 class="what-about-us__title title-md">что о нас говорят</h2>
-                    <div class="what-about-us__button-wrapper">
-                        <button class="what-about-us__button--left">
+                            >Платежи</a></li>
+                    </ul>
+                    <ul class="footer__info-list">
+                        <li class="footer__info-list--title">
+                            Ресурсы
+                        </li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >Бесплатные книги</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >Уроки</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >Блог</a></li>
+                        <li
+                        class="class="
+                        footer__info-list--text""
+                        ><a
+                            class="footer__info-list--color-text"
+                            href="#"
+                            >Плейлист на YouTube</a></li>
+                    </ul>
+                
+                <div class="footer__inner container">
+                    <p>Shop.co © 2000-2023, Все права защищены</p>
+                    <div class="footer__inner-wrap">
+                        <div class="footer__inner-item-wrap">
                             <svg
                             class=""
-                            width="19"
-                            height="16"
+                            width="33"
+                            height="11"
                             >
                                 <use
                                 class=""
-                                href="./icons/What-about-us.svg#slider-button-left"
+                                href="./icons/footer-socialmedia-sprite.svg#visa"
                                 >
                                 </use>
                             </svg>
-                        </button>
-                        <button class="what-about-us__button-right">
+    
+                        </div>
+                        <div class="footer__inner-item-wrap">
                             <svg
                             class=""
-                            width="19"
-                            height="16"
+                            width="26"
+                            height="23"
                             >
                                 <use
                                 class=""
-                                href="./icons/What-about-us.svg#slider-button-right"
+                                href="./icons/footer-socialmedia-sprite.svg#mastercard"
                                 >
                                 </use>
                             </svg>
-                        </button>
-                    </div>
-                    <div class="what-about-us__list">
-                        <article class="what-about-us-card what-about-us__inner-left">
-                            <div class="what-about-us__rating-wrapper">
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                            </div>
-
-                            <h3 class="what-about-us__text-title">Sarah M.</h3>
-                            <p class="what-about-us__text">«Я поражён качеством и стилем одежды, которую получил от
-                                Shop.co. От повседневной одежды до элегантных платьев — каждая вещь, которую я
-                                купил,&nbspпревзошла мои ожидания.»</p>
-                        </article>
-                        <article class="what-about-us-card">
-                            <div class="what-about-us__rating-wrapper">
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                            </div>
-
-                            <h3 class="what-about-us__text-title">Виталий У.</h3>
-                            <p class="what-about-us__text">«Я в восторге от качества и стиля
-                                одежды,&nbspкоторую получил от
-                                Shop.co. От повседневных вещей до элегантных платьев — каждая покупка превзошла мои
-                                ожидания.»</p>
-                        </article>
-                        <article class="what-about-us-card">
-                            <div class="what-about-us__rating-wrapper">
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                            </div>
-
-                            <h3 class="what-about-us__text-title">Даниил В.</h3>
-                            <p class="what-about-us__text">«Раньше было трудно найти одежду под мой стиль, пока я не
-                                открыл Shop.co. Их ассортимент впечатляет и подходит для разных вкусов и случаев.»</p>
-                        </article>
-                        <article class="what-about-us-card">
-                            <div class="what-about-us__rating-wrapper">
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                            </div>
-
-                            <h3 class="what-about-us__text-title">Альберт Б.</h3>
-                            <p class="what-about-us__text">«Я всегда ищу уникальные модные вещи
-                                и&nbspбыл рад открыть для себя Shop.co. Их выбор одежды очень разнообразен и полностью
-                                соответствует последним модным трендам.»</p>
-                        </article>
-                        <article class="what-about-us-card what-about-us__inner-right">
-                            <div class="what-about-us__rating-wrapper ">
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                                <svg
-                                class=""
-                                width="19"
-                                height="16"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/new-arrivals-sprite.svg#star"
-                                    >
-                                    </use>
-                                </svg>
-                            </div>
-
-                            <h3 class="what-about-us__text-title">Матвей К.</h3>
-                            <p class="what-about-us__text">«Я всегда ищу уникальные модные вещи и рад, что открыл
-                                Shop.co. Их ассортимент одежды разнообразен и полностью соответствует последним модным
-                                тенденциям.»</p>
-                        </article>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__container container">
-
-                <div class="footer__banner-wrapper">
-                    <h2 class="footer__banner-text">БУДЬТЕ В КУРСЕ ВСЕХ<br>
-                        ПОСЛЕДНИХ НОВОСТЕЙ</h2>
-                    <div class="footer__form-wrapper">
-                        <input
-                        class="footer__banner-input"
-                        type="email"
-                        required
-                        placeholder="Ваша почта"
-                        >
-                        <button class="footer__banner-button">Подписаться на рассылку</button>
-                    </div>
-
-                </div>
-
-
-
-                <div class="footer__info-wrapper">
-                    <a
-                    class="footer__logo"
-                    href="#"
-                    >
-                        <img
-                        class="footer__img"
-                        src="./icons/SHOP.CO-footer.svg"
-                        alt="Логотип магазина одежды SHOP.CO"
-                        width="167px"
-                        height="23px"
-                        >
-                    </a>
-                    <p class="footer__desc">У нас есть одежда, что подходит вашему стилю и которой можно гордиться. Для
-                        женщин и мужчин.</p>
-                    <div class="footer__list-socialmedia">
-                        <a href="#">
-                            <div class="footer__list-item--twitter">
-                                <svg
-                                width="12"
-                                height="10"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/footer-socialmedia-sprite.svg#twitter"
-                                    >
-
-                                    </use>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="footer__list-item--facebook">
-                                <svg
-                                width="7"
-                                height="13"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/footer-socialmedia-sprite.svg#facebook"
-                                    >
-
-                                    </use>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="footer__list-item--instagram">
-                                <svg
-                                width="14"
-                                height="14"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/footer-socialmedia-sprite.svg#instagram"
-                                    >
-
-                                    </use>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="footer__list-item--github">
-                                <svg
-                                width="13"
-                                height="13"
-                                >
-                                    <use
-                                    class=""
-                                    href="./icons/footer-socialmedia-sprite.svg#github"
-                                    >
-
-                                    </use>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <ul class="footer__info-list">
-                    <li class="footer__info-list--title">
-                        Компания
-                    </li>
-                    <li class="footer__info-list--text"><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >О нас</a></li>
-                    <li class="footer__info-list--text"><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Функции</a></li>
-                    <li class="footer__info-list--text"><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Работы</a></li>
-                    <li class="footer__info-list--text"><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Карьера</a></li>
-                </ul>
-                <ul class="footer__info-list">
-                    <li class="footer__info-list--title">
-                        Помощь
-                    </li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Поддержка</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Доставка</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Условия</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Политика</a></li>
-                </ul>
-                <ul class="footer__info-list">
-                    <li class="footer__info-list--title">
-                        Вопросы
-                    </li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Аккаунт</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >О доставке</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Заказы</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Платежи</a></li>
-                </ul>
-                <ul class="footer__info-list">
-                    <li class="footer__info-list--title">
-                        Ресурсы
-                    </li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Бесплатные книги</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Уроки</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Блог</a></li>
-                    <li
-                    class="class="
-                    footer__info-list--text""
-                    ><a
-                        class="footer__info-list--color-text"
-                        href="#"
-                        >Плейлист на YouTube</a></li>
-                </ul>
-            </div>
-            <div class="footer__inner container">
-                <p>Shop.co © 2000-2023, Все права защищены</p>
-                <div class="footer__inner-wrap">
-                    <div class="footer__inner-item-wrap">
-                        <svg
-                        class=""
-                        width="33"
-                        height="11"
-                        >
-                            <use
+                        </div>
+                        <div class="footer__inner-item-wrap">
+                            <svg
                             class=""
-                            href="./icons/footer-socialmedia-sprite.svg#visa"
+                            width="35"
+                            height="10"
                             >
-                            </use>
-                        </svg>
-
-                    </div>
-                    <div class="footer__inner-item-wrap">
-                        <svg
-                        class=""
-                        width="26"
-                        height="16"
-                        >
-                            <use
+                                <use
+                                class=""
+                                href="./icons/footer-socialmedia-sprite.svg#paypal"
+                                >
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="footer__inner-item-wrap">
+                            <svg
                             class=""
-                            href="./icons/footer-socialmedia-sprite.svg#mastercard"
+                            width="27"
+                            height="12"
                             >
-                            </use>
-                        </svg>
-                    </div>
-                    <div class="footer__inner-item-wrap">
-                        <svg
-                        class=""
-                        width="35"
-                        height="10"
-                        >
-                            <use
+                                <use
+                                class=""
+                                href="./icons/footer-socialmedia-sprite.svg#applepay"
+                                >
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="footer__inner-item-wrap">
+                            <svg
                             class=""
-                            href="./icons/footer-socialmedia-sprite.svg#paypal"
+                            width="29"
+                            height="12"
                             >
-                            </use>
-                        </svg>
+                                <use
+                                class=""
+                                href="./icons/footer-socialmedia-sprite.svg#googlepay"
+                                >
+                                </use>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="footer__inner-item-wrap">
-                        <svg
-                        class=""
-                        width="27"
-                        height="12"
-                        >
-                            <use
-                            class=""
-                            href="./icons/footer-socialmedia-sprite.svg#applepay"
-                            >
-                            </use>
-                        </svg>
-                    </div>
-                    <div class="footer__inner-item-wrap">
-                        <svg
-                        class=""
-                        width="29"
-                        height="12"
-                        >
-                            <use
-                            class=""
-                            href="./icons/footer-socialmedia-sprite.svg#googlepay"
-                            >
-                            </use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
+                </div> -->
+  </footer>
+</body>
 
 </html>
