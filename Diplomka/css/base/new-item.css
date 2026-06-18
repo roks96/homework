@@ -44,7 +44,7 @@
 	display: block;
 	width: 104px;
 	height: 18px;
-	background-image: url('../../images/new arrivals/Rating4.5.svg');
+	background-image: url('../../images/new-arrivals/Rating4.5.svg');
 	margin-right: 13px;
 }
 
@@ -75,7 +75,7 @@
 	display: block;
 	width: 80px;
 	height: 18px;
-	background-image: url('../../images/new arrivals/Rating3.5.svg');
+	background-image: url('../../images/new-arrivals/Rating3.5.svg');
 }
 
 .new-arrivals__item-wrapper {
@@ -138,7 +138,7 @@
 		display: block;
 		width: 87px;
 		height: 15px;
-		background-image: url('../../images/new arrivals/Rating4.5adapt.svg');
+		background-image: url('../../images/new-arrivals/Rating4.5adapt.svg');
 		margin-right: 11px;
 	}
 
@@ -147,7 +147,7 @@
 		display: block;
 		width: 67px;
 		height: 15px;
-		background-image: url('../../images/new arrivals/Rating3.5adapt.svg');
+		background-image: url('../../images/new-arrivals/Rating3.5adapt.svg');
 	} */
 
 	.new-arrivals__item-text {
@@ -179,7 +179,7 @@
 		display: block;
 		width: 87px;
 		height: 15px;
-		background-image: url('../../images/new arrivals/Rating4.5adapt.svg');
+		background-image: url('../../images/new-arrivals/Rating4.5adapt.svg');
 		margin-right: 11px;
 	}
 
@@ -188,7 +188,7 @@
 		display: block;
 		width: 67px;
 		height: 15px;
-		background-image: url('../../images/new arrivals/Rating3.5adapt.svg');
+		background-image: url('../../images/new-arrivals/Rating3.5adapt.svg');
 	}
 }
 
