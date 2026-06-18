@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--secondary-color);
-  min-height: 72vh;
+  height: 67vh;
 }
 
 .footer__container {
