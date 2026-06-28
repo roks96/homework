@@ -40,13 +40,23 @@
 	font-weight: 500;
 	font-size: 16px;
 	border-radius: 62px;
-	padding-block: 16px;
+	/* padding-block: 16px; */
 	width: 210px;
 	height: 52px;
 	background: var(--main-color);
 	color: var(--bg-color);
 	margin-top: 32px;
 }
+
+.hero__button {
+
+	transition: var(--transition-time);
+}
+
+.hero__button:hover {
+	background-color: var(--hover-color);
+}
+
 
 .hero__stats {
 	display: flex;
@@ -133,7 +143,7 @@
 	z-index: var(--layer-negative);
 }
 
-@media (width<= 1440px) {
+@media (width<=1440px) {
 	.hero__image {
 		/* width: clamp(35.188rem, -3.563rem + 50vw, 41.438rem); */
 		/* position: static; */
@@ -197,6 +207,7 @@
 		top: -4%;
 		left: 86%;
 	}
+
 	.hero__star--small {
 		top: 25%;
 		left: 48%;
@@ -208,6 +219,7 @@
 		transform: translate(418px, -624px);
 	}
 }
+
 @media (width<=1100px) {
 	.hero__image {
 		/* top: -3%;
@@ -221,6 +233,7 @@
 		top: -4%;
 		left: 86%;
 	}
+
 	.hero__star--small {
 		top: 25%;
 		left: 48%;
@@ -244,8 +257,7 @@
 		justify-content: center;
 	}
 
-	.hero__subtitle {
-	}
+	.hero__subtitle {}
 
 	.hero__image-wrapper {
 		display: flex;
@@ -287,6 +299,7 @@
 		flex-shrink: 0;
 		margin: -53px 0 -170px 0;
 	}
+
 	.hero__star--large {
 		position: absolute;
 		top: 50%;
@@ -304,6 +317,7 @@
 	.hero__image {
 		transform: translate(0px, 1%);
 	}
+
 	.hero__title {
 		font-size: 32px;
 		line-height: 106%;
@@ -325,6 +339,7 @@
 		margin-top: 23px;
 	}
 
+
 	.hero__stats {
 		grid-template-columns: 122px 136px;
 		margin-top: 22px;
@@ -336,6 +351,7 @@
 		min-width: 122px;
 		min-height: 48px;
 	}
+
 	.stats__item--two {
 		min-width: 136px;
 		min-height: 48px;
@@ -344,6 +360,7 @@
 	.stats__value {
 		font-size: 24px;
 	}
+
 	.stats__label {
 		font-size: 12px;
 		line-height: 183%;
@@ -375,8 +392,7 @@
 		font-size: 31.5px;
 	}
 
-	.hero__subtitle {
-	}
+	.hero__subtitle {}
 
 	.hero__stats {
 		margin-top: 20px;
@@ -396,8 +412,8 @@
 	.hero__title {
 		margin-top: 40px;
 	}
-	.hero__image-wrapper {
-	}
+
+	.hero__image-wrapper {}
 
 	.hero__image {
 		width: 103vw;
@@ -445,6 +461,7 @@
 		width: 60px;
 		height: 60px;
 	}
+
 	.hero__star--small {
 		top: 69%;
 		left: 5%;

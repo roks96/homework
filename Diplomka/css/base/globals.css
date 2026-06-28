@@ -9,6 +9,10 @@
 	background-color: var(--bg-color);
 }
 
+.page__body--no-scroll{
+	overflow-y: hidden;
+}
+
 .container {
 	width: min(var(--container-width), 100% - var(--container-pudding) * 2);
 	margin: 0 auto;

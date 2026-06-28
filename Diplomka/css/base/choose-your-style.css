@@ -34,8 +34,7 @@
   font-size: 36px;
 }
 
-.choose-your-style__product-wrapper--free-style {
-}
+
 
 .choose-your-style__content {
   position: relative;
@@ -44,8 +43,7 @@
   border-radius: 20px;
 }
 
-.choose-your-style__product-img {
-}
+
 
 .choose-your-style__product-image--free-style {
   position: absolute;
@@ -53,6 +51,14 @@
   min-height: 649px;
   right: -55%;
   top: -40%;
+  filter: blur(2px);
+}
+
+.choose-your-style__product-image--free-style{
+  transition: var(--transition-time);
+}
+.choose-your-style__product-image--free-style:hover{
+  filter: none;
 }
 
 .choose-your-style__product-text--formal-style {
@@ -68,6 +74,14 @@
   min-width: 761px;
   min-height: 670px;
   transform: translate(-2%, -18%);
+  filter: blur(2px);
+}
+
+.choose-your-style__product-image--formal-style{
+  transition: var(--transition-time);
+}
+.choose-your-style__product-image--formal-style:hover{
+  filter: none;
 }
 
 .choose-your-style__product-text--evening-style {
@@ -83,6 +97,15 @@
   min-width: 770px;
   min-height: auto;
   transform: translate(2%, -30%);
+  filter: blur(2px);
+
+}
+
+.choose-your-style__product-image--evening-style{
+transition: var(--transition-time);
+}
+.choose-your-style__product-image--evening-style:hover{
+ filter: none;
 }
 
 .choose-your-style__product-text--sport-style {
@@ -98,6 +121,14 @@
   min-width: 409px;
   min-height: auto;
   transform: translate(14%, -29%);
+  filter: blur(2px);
+}
+
+.choose-your-style__product-image--sport-style{
+  transition: var(--transition-time);
+}
+.choose-your-style__product-image--sport-style:hover{
+   filter: none;
 }
 
 .choose-your-style__content:nth-child(1) {
@@ -327,12 +358,10 @@
   }
   .choose-your-style__product-image--free-style {
     right: 2%;
-    filter: blur(2px);
   }
   .choose-your-style__product-image--formal-style {
     min-width: 487px;
     transform: translate(-1%, -15%);
-    filter: blur(2px);
   }
   .choose-your-style__product-text--formal-style {
     left: 39px;
@@ -347,7 +376,6 @@
   .choose-your-style__product-image--evening-style {
     min-width: 492px;
     transform: translate(4%, -30%);
-    filter: blur(2px);
   }
   .choose-your-style__product-text--sport-style {
     left: 39px;
@@ -357,7 +385,6 @@
   .choose-your-style__product-image--sport-style {
     max-width: 61%;
     transform: translate(35%, -30%);
-    filter: blur(2px);
   }
 
   @media (width<=600px) {
@@ -420,8 +447,7 @@
     .choose-your-style__wrapper {
       min-width: 390px;
     }
-    .choose-your-style__product {
-    }
+    
     .choose-your-style__title {
       text-align: center;
       padding: 0px 75px 0px 75px;

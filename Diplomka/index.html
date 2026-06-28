@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/index.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/Shop-Co-favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+
+  <script defer src="./js/index.js" type="module"></script>
   <title>Магазин одежды SHOP.CO</title>
 </head>
 
@@ -13,18 +18,18 @@
     <div class="banner__wrapper">
       <p class="banner__text">
         Зарегистрируйтесь и получите скидку 20% на первую покупку.
-        <span class="banner__link">Зарегистрироваться&nbsp;сейчас</span>
+        <a class="banner__link" href="#">Зарегистрироваться&nbsp;сейчас</a>
       </p>
       <button class="banner__close">
-        <svg width="24" height="24">
-          <use href="./icons/sprite.svg#cross"></use>
+        <svg width="14" height="14">
+          <use href="./icons/sprite.svg"></use>
         </svg>
       </button>
     </div>
   </div>
   <div class="banner--mobile">
     <div class="banner__wrapper">
-      <p class="banner__text">Зарегистрироваться&nbsp;сейчас</p>
+      <a class="banner__text" href="#">Зарегистрироваться&nbsp;сейчас</a>
       <button class="banner__close">
         <svg width="24" height="24">
           <use href="./icons/sprite.svg#cross"></use>
@@ -34,23 +39,28 @@
   </div>
   <header class="header">
     <div class="container header__container">
-      <button class="header__burger">
+      <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false"
+        aria-controls="header__menu">
         <svg width="24" height="24">
-          <use class="burger__icon-menu" href="./icons/sprite.svg#burger"></use>
+          <use class="burger__icon-menu" href="./icons/header-sprite.svg#burger"></use>
+          <use class="burger__icon-cross" href="./icons/header-sprite.svg#menu-cross"></use>
         </svg>
+
       </button>
 
       <a class="logo header__logo" href="#">
         <img class="logo__img" src="./icons/logo.svg" alt="Логотип магазина" width="160" height="22">
       </a>
-      <nav class="menu header__menu" aria-label="Главное меню">
+      <nav class="menu header__menu" id="header__menu" aria-label="Главное меню">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#">Магазин</a>
 
-            <svg class="" width="16" height="23">
-              <use class="header__actions-button--arrow-down" href="./icons/sprite.svg#down-arrow"></use>
-            </svg>
+            <a class="menu__link" href="#">
+              <svg class="" width="16" height="16">
+                <use class="header__actions-button--arrow-down " href="./icons/header-sprite.svg#arrow-down"></use>
+              </svg>
+            </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Скидки</a>
@@ -67,7 +77,7 @@
       <div class="header__search">
         <button class="header__search-icon">
           <svg width="24" height="24">
-            <use class="" href="./icons/sprite.svg#search"></use>
+            <use class="" href="./icons/header-sprite.svg#search"></use>
           </svg>
         </button>
         <input class="header__search-form" type="search" placeholder="Искать товары...">
@@ -76,19 +86,19 @@
       <div class="header__actions">
         <button class="header__search-icon--black">
           <svg width="24" height="24">
-            <use class="" href="./icons/sprite.svg#search-black"></use>
+            <use class="header__actions-icon" href="./icons/header-sprite.svg#search-black"></use>
           </svg>
         </button>
 
         <button class="header__actions-button">
           <svg width="24" height="24">
-            <use class="" href="./icons/sprite.svg#cart"></use>
+            <use class="header__actions-icon" href="./icons/header-sprite.svg#cart"></use>
           </svg>
         </button>
 
         <button class="header__actions-button">
           <svg width="24" height="24">
-            <use class="" href="./icons/sprite.svg#personal"></use>
+            <use class="header__actions-icon" href="./icons/header-sprite.svg#personal"></use>
           </svg>
         </button>
       </div>
@@ -401,23 +411,23 @@
         </div>
       </div>
     </section>
-    <section class="what-about-us">
-      <div class="what-about-us__wrapper container">
+    <!-- <section class="what-about-us swiper">
+      <div class="what-about-us__wrapper container ">
         <h2 class="what-about-us__title title-md">что о нас говорят</h2>
         <div class="what-about-us__button-wrapper">
-          <button class="what-about-us__button--left">
+          <button class="what-about-us__button--left ">
             <svg class="" width="23" height="23">
               <use class="" href="./icons/What-about-us.svg#slider-button-left"></use>
             </svg>
           </button>
-          <button class="what-about-us__button-right">
+          <button class="what-about-us__button-right ">
             <svg class="" width="23" height="23">
               <use class="" href="./icons/What-about-us.svg#slider-button-right"></use>
             </svg>
           </button>
         </div>
-        <div class="what-about-us__list">
-          <article class="what-about-us-card what-about-us__item-one">
+        <div class="what-about-us__list swiper-wrapper">
+          <article class="what-about-us__card what-about-us__item-one swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -443,7 +453,7 @@
               покупка превзошла мои ожидания.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-two">
+          <article class="what-about-us__card what-about-us__item-two swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -469,7 +479,7 @@
               и случаев.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-three">
+          <article class="what-about-us__card what-about-us__item-three swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -495,7 +505,7 @@
               соответствует последним модным трендам.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-four">
+          <article class="what-about-us__card what-about-us__item-four swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -521,7 +531,7 @@
               вещь, которую я купил,&nbsp;превзошла мои ожидания.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-five">
+          <article class="what-about-us__card what-about-us__item-five swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -547,7 +557,7 @@
               последним модным тенденциям.»
             </p>
           </article>
-          <article class="what-about-us-card what-about-us__item-six">
+          <article class="what-about-us__card what-about-us__item-six swiper-slide">
             <div class="what-about-us__rating-wrapper">
               <svg class="what-about-us__icon--star" width="23" height="23">
                 <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
@@ -575,7 +585,195 @@
           </article>
         </div>
       </div>
+    </section> -->
+
+    <section class="what-about-us">
+      <div class="container">
+        <div class="what-about-us__wrapper">
+          <div class="what-about-us__wrap">
+            <h2 class="what-about-us__title title-md">Что о нас говорят</h2>
+            <div class="what-about-us__button-wrapper">
+              <button class="what-about-us__button--left ">
+                <svg class="" width="23" height="23">
+                  <use class="" href="./icons/What-about-us.svg#slider-button-left"></use>
+                </svg>
+              </button>
+              <button class="what-about-us__button-right ">
+                <svg class="" width="23" height="23">
+                  <use class="" href="./icons/What-about-us.svg#slider-button-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper what-about-us__list">
+              <article class="what-about-us__card what-about-us__item-one swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Виталий У.</h3>
+                <p class="what-about-us__text">
+                  «Я в восторге от качества и стиля одежды,&nbsp;которую получил от
+                  Shop.co. От повседневных вещей до элегантных платьев — каждая
+                  покупка превзошла мои ожидания.»
+                </p>
+              </article>
+              <article class="what-about-us__card what-about-us__item-two swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Даниил В.</h3>
+                <p class="what-about-us__text">
+                  «Раньше было трудно найти одежду под мой стиль, пока я не открыл
+                  Shop.co. Их ассортимент впечатляет и подходит для разных вкусов
+                  и случаев.»
+                </p>
+              </article>
+              <article class="what-about-us__card what-about-us__item-three swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Альберт Б.</h3>
+                <p class="what-about-us__text">
+                  «Я всегда ищу уникальные модные вещи и&nbsp;был рад открыть для
+                  себя Shop.co. Их выбор одежды очень разнообразен и полностью
+                  соответствует последним модным трендам.»
+                </p>
+              </article>
+              <article class="what-about-us__card what-about-us__item-four swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Sarah M.</h3>
+                <p class="what-about-us__text">
+                  «Я поражён качеством и стилем одежды, которую получил от
+                  Shop.co. От повседневной одежды до элегантных платьев — каждая
+                  вещь, которую я купил,&nbsp;превзошла мои ожидания.»
+                </p>
+              </article>
+              <article class="what-about-us__card what-about-us__item-five swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Матвей К.</h3>
+                <p class="what-about-us__text">
+                  «Я всегда ищу уникальные модные вещи и рад, что открыл Shop.co.
+                  Их ассортимент одежды разнообразен и полностью соответствует
+                  последним модным тенденциям.»
+                </p>
+              </article>
+              <article class="what-about-us__card what-about-us__item-six swiper-slide">
+                <div class="what-about-us__rating-wrapper">
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                  <svg class="what-about-us__icon--star" width="23" height="23">
+                    <use class="" href="./icons/new-arrivals-sprite.svg#star"></use>
+                  </svg>
+                </div>
+
+                <h3 class="what-about-us__text-title">Максим А.</h3>
+                <p class="what-about-us__text">
+                  «Я впечатлён качеством и стилем одежды от Shop.co. От
+                  повседневных вещей до элегантных платьев — каждая покупка
+                  превзошла мои ожидания.»
+                </p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
+
+
+
+
+
   </main>
   <footer class="footer">
     <div class="footer__container container">
