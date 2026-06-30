@@ -498,9 +498,7 @@
     gap: 12px;
   }
 
-  .footer__container {
-    padding-bottom: 294px;
-  }
+  
 
   .footer__info-container::after {
     top: 660px;
@@ -508,9 +506,7 @@
 }
 
 @media (width<=390px) {
-  .footer__container {
-    padding-bottom: 294px;
-  }
+  
 
   .footer__banner-wrapper {
     top: -125px;

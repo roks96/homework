@@ -91,13 +91,21 @@
 	transition: color var(--hover-color);
 }
 
-.header__actions-icon:hover {
+.header__actions-ico{
+	display: flex;
+}
+
+.header__search-icon--black:hover {
 	color: var(--hover-color);
 }
 
 .header__burger {
 	color: #000;
 	transition: color var(--transition-time);
+}
+
+.burger__icon{
+	display: flex;
 }
 
 .burger__icon-menu:hover {
@@ -187,10 +195,14 @@
 	}
 }
 
-@media (width<=590px) {
+@media (width<=630px){
+
+}
+
+@media (width<=630px) {
 	.header__container {
 		column-gap: 16px;
-		margin-top: 20px;
+		/* margin-top: 20px; */
 	}
 
 	.banner {
@@ -212,6 +224,7 @@
 	.logo__img {
 		width: 126px;
 		height: 18px;
+		display: flex;
 	}
 
 	.header__search-form {

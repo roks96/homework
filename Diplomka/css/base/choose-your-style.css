@@ -413,6 +413,7 @@ transition: var(--transition-time);
     }
     .choose-your-style__wrapper {
       min-width: 370px;
+      margin-bottom: 40px;
     }
     .choose-your-style__title {
       font-size: 30px;
