@@ -108,45 +108,45 @@
 //    С помощью alert выведите итоговую стоимость доставки, например: "Итоговая стоимость доставки: 15$."
 
 
-const weight = +prompt("Вес посылки","Укажите в килограммах");
+// const weight = +prompt("Вес посылки","Укажите в килограммах");
 
-const deliveryType = prompt("Выберите тип доставки","Стандарт, Экспресс, Премиум");
+// const deliveryType = prompt("Выберите тип доставки","Стандарт, Экспресс, Премиум");
 
-let deliveryPrice
+// let deliveryPrice
 
 
 
-if (weight <= 0){
-    alert("Некорректный вес посылки");
-} if (deliveryType !== "Стандарт" && deliveryType !== "Экспресс" && deliveryType !== "Премиум"){
-    alert("Неверный тип доставки")
-}
+// if (weight <= 0){
+//     alert("Некорректный вес посылки");
+// } if (deliveryType !== "Стандарт" && deliveryType !== "Экспресс" && deliveryType !== "Премиум"){
+//     alert("Неверный тип доставки")
+// }
 
-if (weight > 0 && weight <= 1){
-    deliveryPrice = 5
-} else if (weight > 1 && weight <= 5){
-    deliveryPrice = 10
-} else if (weight > 5){
-    deliveryPrice = 15
-}
+// if (weight > 0 && weight <= 1){
+//     deliveryPrice = 5
+// } else if (weight > 1 && weight <= 5){
+//     deliveryPrice = 10
+// } else if (weight > 5){
+//     deliveryPrice = 15
+// }
 
-let coefficient
+// let coefficient
 
-switch (deliveryType){
-    case "Стандарт":
-        coefficient = 1;
-        break
-    case "Экспресс":
-        coefficient = 1.5;
-        break
-    case "Премиум":
-        coefficient = 2;
-        break
-}
+// switch (deliveryType){
+//     case "Стандарт":
+//         coefficient = 1;
+//         break
+//     case "Экспресс":
+//         coefficient = 1.5;
+//         break
+//     case "Премиум":
+//         coefficient = 2;
+//         break
+// }
 
-const totalPrice = deliveryPrice * coefficient;
+// const totalPrice = deliveryPrice * coefficient;
 
-    alert (`Итоговая стоимость доставки: ${totalPrice}$`)
+//     alert (`Итоговая стоимость доставки: ${totalPrice}$`)
 
 
 
